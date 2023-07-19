@@ -1,0 +1,86 @@
+{
+    "manager": {
+      "name": "Mikel Arteta",
+      "nationality": "Spain",
+      "img": "https://shorturl.at/ajEY1"
+    },
+    "players": [
+      {
+        "position": "Goalkeeper",
+        "name": "Aaron Ramsdale",
+        "nationality": "England",
+        "number": 1,
+        "img": "https://shorturl.at/fklB3"
+      },
+      {
+        "position": "Defender",
+        "name": "Ben White",
+        "nationality": "England",
+        "number": 4,
+        "img": "https://shorturl.at/fMO04"
+      },
+      {
+        "position": "Defender",
+        "name": "William Saliba",
+        "nationality": "France",
+        "number": 12,
+        "img": "https://shorturl.at/bfoxI"
+      },
+      {
+        "position": "Defender",
+        "name": "Gabriel Maghalesaes",
+        "nationality": "Brazil",
+        "number": 5,
+        "img": "https://shorturl.at/krtNW"
+      },
+      {
+        "position": "Defender",
+        "name": "Oleksadrar Zinchenko",
+        "nationality": "Ukraine",
+        "number": 34,
+        "img": "https://shorturl.at/bmCV3"
+      },
+      {
+        "position": "Midfielder",
+        "name": "Martin Ørdegaard",
+        "nationality": "Norway",
+        "number": 8,
+        "img": "https://shorturl.at/xDNO8"
+      },
+      {
+        "position": "Midfielder",
+        "name": "Thomas Partey",
+        "nationality": "Ghana",
+        "number": 6,
+        "img": "https://shorturl.at/bfhY6"
+      },
+      {
+        "position": "Midfielder",
+        "name": "Granit Xhaka",
+        "nationality": "Switzerland",
+        "number": 35,
+        "img": "https://shorturl.at/agrCU"
+      },
+      {
+        "position": "Winger",
+        "name": "Bukayo Saka",
+        "nationality": "England",
+        "number": 7,
+        "img": "https://shorturl.at/cmPWX"
+      },
+      {
+        "position": "Winger",
+        "name": "Gabriel Martinelli",
+        "nationality": "England",
+        "number": 11,
+        "img": "https://shorturl.at/qtzIZ"
+      },
+      {
+        "position": "Striker",
+        "name": "Gabriel Jesus",
+        "nationality": "Brazil",
+        "img": "https://shorturl.at/qABD8"
+      }
+    ]
+  }
+  
