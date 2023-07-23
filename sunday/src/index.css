@@ -1,0 +1,263 @@
+:root {
+  --border-p: 1px solid;
+  --border-r: 8px;
+  --dark-100: #171717;
+  --gray-100: #F5F5F5;
+  --gray-200: #BBBBBB;
+  --red-100: #F58F8E20;
+  --red-200: #CC342D;
+  --red-300: #890606;
+  --green-100: #3D8836;
+  --blue-100: #D0ECFF;
+  --blue-200: #0a2e41;
+  --blue-300: #051522;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  position: relative;
+  background: var(--gray-100);
+  color: var(--dark-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #6b5e67;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--border-p);
+  border-color: var(--gray-200);
+  border-radius: 8px;
+  padding: 53px 29px;
+  min-width: 900px;
+  max-width: 1100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(8, 1fr) repeat(4, minmax(48px, 1fr));
+  column-gap: 18px;
+}
+
+.page-title {
+  color: var(--dark-100);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.list {
+  position: relative;
+  grid-row-start: 1;
+  grid-column: 1 / span 8;
+}
+
+.l-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 522px;
+  overflow: scroll;
+}
+
+.form {
+  border: var(--border-p);
+  border-color: var(--gray-200);
+  border-radius: var(--border-r);
+  overflow-y: none;
+  position: sticky;
+  grid-row-start: 1;
+  height: fit-content;
+  padding-bottom: 40px;
+  grid-column: 9 / span 4;
+}
+
+.search {
+  position: relative;
+}
+
+.search > input {
+  padding: 8px 8px 8px 26px;
+  border-radius: var(--border-r);
+  min-width: 254px;
+  border: var(--border-p);
+  border-color: var(--gray-200);
+  background: transparent;
+  outline: none;
+}
+
+.search::before {
+  content: url("./icons/search.svg");
+  position: absolute;
+  top: 25%;
+  left: 0;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.ttable {
+  border: none;
+  background: none;
+  border-spacing: 0px 8px;
+  width: 100%;
+  border-collapse: unset;
+}
+
+.ttable > thead {
+  padding: 5px;
+}
+
+.ttable > thead > tr > th {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--gray-200);
+  text-align: start;
+  padding: 0 10px;
+}
+
+.ttable > tbody > tr {
+  background-color: #fff;
+  border-radius: var(--border-r);
+  width: 100%;
+}
+
+.ttable > tbody > tr > td {
+  padding: 10px;
+  margin: 10px;
+  text-align: start;
+}
+
+.date {
+  background-color: var(--gray-100);
+  padding: 4px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.category {
+  background-color: var(--blue-100);
+  color: var(--blue-300);
+  border: var(--border-p);
+  border-radius: 3px;
+  text-align: center;
+  padding: 4px;
+  border-color: var(--blue-200);
+}
+
+.delete {
+  border: var(--border-p);
+  border-color: var(--red-200);
+  border-radius: 5px;
+  padding: 4px;
+  color: var(--red-200);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: background-color all 300ms ease;
+  transition: color all 300ms ease;
+  cursor: pointer;
+}
+
+.delete > svg {
+  stroke: var(--red-200);
+}
+
+.delete:hover {
+  background-color: var(--red-200);
+  color: #fff;
+  font-weight: 400;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.delete:hover > svg {
+  stroke: #fff;
+}
+
+.positive {
+  color: var(--green-100);
+}
+
+.negative {
+  color: var(--red-300);
+}
+
+.add-form {
+  padding: 10px;
+}
+
+.add-form > h3 {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--gray-200);
+  margin-bottom: 18px;
+}
+
+.add-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-form input {
+  padding: 8px;
+  border: var(--border-p);
+  border-radius: var(--border-r);
+  border-color: var(--gray-200);
+  background-color: transparent;
+  outline: none;
+}
+
+.add-form input:focus,
+.add-form input:active {
+  border-color: var(--blue-200);
+}
+
+.add-form input[type="submit"] {
+  background-color: var(--blue-200);
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.add-form input[type="submit"]:hover {
+  background-color: var(--blue-300);
+}
+
+.add-form input[type=date]::placeholder {
+  color: var(--gray-200);
+}
+
+.add-form input[type=date]:invalid::-webkit-datetime-edit {
+  color: var(--gray-200);
+}
